@@ -2,6 +2,10 @@ main {
     width: 960px;
     margin: 0px auto;
     background-color:darkgray;
+	display: block;
+	overflow:hidden;
+	box-sizing:border-box;
+	padding:0px 10px 0px 10px;
 }
 
 .fullcard {
