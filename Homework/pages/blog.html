@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>title</title>
+    <link href="../styles/stylesheet.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <header>
+      My website sucks
+    </header>  
+      <nav>
+        <ul>
+          <li><a href="home.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="blog.html">Blog</a></li>
+        </ul>
+        <div class="handle"><font color="white">touch point</font></div>
+      </nav>
+      
+  <p>blog</p>
+
+    
+    <script>
+      $('.handle').on('click', function(){
+        $('nav ul').toggleClass('showing');
+      });
+    </script>
+  </body>
+</html>
