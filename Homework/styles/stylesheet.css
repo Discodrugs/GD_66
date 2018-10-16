@@ -225,7 +225,7 @@ body{
 * {
     box-sizing: border-box;
 }
-}
+
 .container {
     max-width:1200px; 
 	margin-right: auto;
@@ -244,7 +244,7 @@ body{
     }
 }
 
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+
 @media screen and (max-width: 600px) {
     .two, .two-b, .three, .three-b, .three-c {
         -ms-flex: 100%;
