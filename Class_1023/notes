@@ -1,0 +1,31 @@
+script vs programming
+script can be shared and understood by others 
+programming is compiled into 1's and 0's 
+
+
+javascript is used in every browser
+little relation to java 
+* javascript issues commands to structure
+* a chain of events
+* common events are mouse clicks on a dropdown menu, window resizing, 
+  for example.
+  These events create functions. think domino effect.
+
+* a synchronous language
+  relies on previous line of script to function
+  javascript trumps html
+
+  Function <-- Command 
+
+  variables
+ (think of it as a container)
+  Boolean. has two states, positive or negative, yes or no. up or down.
+  float
+  string. a line of text
+  integer
+
+
+ask how to fix a repetative task 
+
+()  contain value
+{}  what the function will do
