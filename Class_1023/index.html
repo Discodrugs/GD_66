@@ -7,18 +7,26 @@
   </head>
   <body>
 
-    <!-- button -->
+    <!-- buttons 1 2 3 4 -->
     <div class="button-container">
         <button onclick="changeMyText()">Change Text</button>
 
-        <button onclick="changeMyColor()">Change Color</button>
+        <button onclick="changeMyColor()">Change Text Color</button>
+
+        <button onclick="changeMybackground()">Change Background Color</button>
+
+        <button onclick="DoNotPress()">Do Not Press</button>
     </div>
+     
+
 
    
     <h1 id="docheader">Goodbye, Sky!</h1>
+    <img src="../Class_1023/scary.gif" id="scary.gif" style="display:none;"/> 
     <script>
         // Global scope
         var docheader = document.getElementById("docheader");
+      
        
         // Button scope
         // Change text
@@ -32,10 +40,27 @@
         var red = Math.random()*255;
         var green = Math.random()*255;
         var blue = Math.random()*255;
-
         var RGBval="rgb(" + red + ", " + blue + " , " + green + ")";
         docheader.style.color=RGBval;
         }
+
+        //Change Background Color
+        var changeMybackground=function(){
+        var red = Math.random()*255;
+        var green = Math.random()*255;
+        var blue = Math.random()*255;
+        var RGBval="rgb(" + red + ", " + blue + " , " + green + ")";
+        document.body.style.backgroundColor = RGBval; 
+        }
+
+        //Dont do it button
+        var DoNotPress=function(){
+        document.getElementById("scary.gif").src = "../Class_1023/scary.gif"
+        document.body.style.backgroundColor = "black";
+        document.getElementById("scary.gif").style.display='block';   
+        }
+        
+        
         
         // document.getElementById('docheader').innerHTML = myText;
         // document.getElementById("docheader").style.fontSize=myTextSize + "px";

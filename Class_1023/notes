@@ -18,7 +18,7 @@ little relation to java
   Function <-- Command 
 
   variables
- (think of it as a container)
+  (think of it as a container)
   Boolean. has two states, positive or negative, yes or no. up or down.
   float
   string. a line of text
