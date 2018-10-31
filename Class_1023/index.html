@@ -8,7 +8,7 @@
   <body>
 
     <!-- buttons 1 2 3 4 -->
-    <div class="button-container">
+    <div class="button-container" id="buttons">
         <button onclick="changeMyText()">Change Text</button>
 
         <button onclick="changeMyColor()">Change Text Color</button>
@@ -55,9 +55,10 @@
 
         //Dont do it button
         var DoNotPress=function(){
-        document.getElementById("scary.gif").src = "../Class_1023/scary.gif"
-        document.body.style.backgroundColor = "black";
-        document.getElementById("scary.gif").style.display='block';   
+        //document.getElementById("scary.gif").src = "../Class_1023/scary.gif";
+        document.getElementById("scary.gif").style.display='block';
+        document.body.style.backgroundColor = "black";  
+        document.getElementById("buttons").style.visibility="hidden";
         }
         
         
