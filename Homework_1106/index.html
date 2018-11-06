@@ -11,12 +11,15 @@
    </header>
 
    <!--buttons-->
+   <div align="left">
    <button type="button-container" onclick="inflate()">Inflate</button>
-   <img src="ballon.gif" id="ballon" width="250" alt="ballon">
    <button type="button-container" onclick="deflate()">Deflate</button>
-   <!---->
-   <button onclick="change();".src='redballon.gif'">Change Color</button>
- 
+   <button onclick="changeColor();".src='redballon.gif'">Change Color</button>
+   </div>
+   <!--ballon-->
+   <div align="center">
+        <img src="ballon.gif" id="ballon" width="250" alt="ballon">
+   </div>
 
 
 
@@ -44,7 +47,7 @@
     }
 
     var image_tracker = 'ballon';
-    function change(){
+    function changeColor(){
         var image = document.getElementById('ballon');
         if(image_tracker=='ballon'){
         image.src='redballon.gif';
