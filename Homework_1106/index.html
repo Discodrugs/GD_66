@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>title</title>
+  <link rel="stylesheet" href="stylesheet.css" type="text/css">
+  </head>
+  <body>
+   <header>
+        <h1 id="docheader">Inflate the ballon</h1> 
+   </header>
+
+   <!--buttons-->
+   <button type="button-container" onclick="inflate()">Inflate</button>
+   <img src="ballon.gif" id="ballon" width="250" alt="ballon">
+   <button type="button-container" onclick="deflate()">Deflate</button>
+   <!---->
+   <button onclick="change();".src='redballon.gif'">Change Color</button>
+ 
+
+
+
+   <!---->
+   <script>
+    function inflate(){
+        var ballonImg = document.getElementById("ballon");
+        var currentWidth = ballonImg.clientWidth;
+        if(currentWidth == 500){
+        alert("Don't pop the ballon!");
+        } 
+        else{
+            ballonImg.style.width = (currentWidth + 50) + "px";
+        } 
+    }
+    function deflate(){
+        var ballonImg = document.getElementById("ballon");
+        var currentWidth = ballonImg.clientWidth;
+        if(currentWidth == 50){
+        alert("Add some air!");
+        } 
+        else{
+            ballonImg.style.width = (currentWidth - 50) + "px";
+        }
+    }
+
+    var image_tracker = 'ballon';
+    function change(){
+        var image = document.getElementById('ballon');
+        if(image_tracker=='ballon'){
+        image.src='redballon.gif';
+        image_tracker='redballon';
+        }
+        else{
+        image.src='ballon.gif';
+        image_tracker='ballon';
+        }
+ }
+    
+</script>
+</body>
+</html>
