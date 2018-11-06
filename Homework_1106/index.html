@@ -57,7 +57,13 @@
         image.src='ballon.gif';
         image_tracker='ballon';
         }
+        var red = Math.random()*255;
+        var green = Math.random()*255;
+        var blue = Math.random()*255;
+        var RGBval="rgb(" + red + ", " + blue + " , " + green + ")";
+        document.body.style.backgroundColor = RGBval;
  }
+ 
     
 </script>
 </body>
