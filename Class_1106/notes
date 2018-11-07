@@ -1,0 +1,6 @@
+$(document).ready(){
+
+} 
+checks everything in DOM is working before 
+
+hide and show buttons using jquery

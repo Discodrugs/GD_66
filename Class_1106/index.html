@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>title</title>
+<link rel="stylesheet" href="stylesheet.css" type="text/css">
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+</head>
+  <body>
+    <div class="button-container">
+        <button id="imgToggle"></button>
+    </div>
+
+    <h1>This is a Quokka!</h1>
+
+    <img 
+    src="../Class_1106/quokka.jpg" alt="Quokka" class="page-img">
+
+
+
+        <script>
+            $(document).ready(function(){
+                var imgQuokka=document.getElementsByClassName('page-img')[0];
+                imgQuokka.style.display="none";
+
+                var buttonToggle = document.getElementById("imgToggle");
+                buttonToggle.innerText ="Show The Image";
+
+                $('.page-img').hide();
+                $('#imgToggle').text("Show The Image");
+            })
+        
+        </script>
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+  </body>
+</html>
