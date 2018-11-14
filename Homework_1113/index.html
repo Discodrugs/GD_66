@@ -24,18 +24,17 @@
     </div>
 
     <script>
+        console.log()
         $(document).ready(function(){
-
-            $('#inflate').click(function(){
-                $('.page-img').animate({
-                    width: '500px',                
-                }, 1000);
+            $("#inflate").click(function(){
+                $(".page-img").animate({height: "700px"});
             });
-
+            $("#deflate").click(function(){
+                $(".page-img").animate({height: "200px"});
+            });
             $('#colorSwitch').click(function(){
                 colorSwitch();
             });
-
             var colorSwitch = function(){
                 $('.page-img').toggle();
             }    
