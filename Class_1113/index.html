@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>title</title>
+    <link rel="stylesheet" href="main.css" type="text/css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  </head>
+  <body>
+        <div class="button-container">
+            <button id="append">Append</button>
+            <button id="prepend">Prepend</button>
+
+            <button id="appendTo">Append To</button>
+            <button id="prependTo">Prepend To</button>
+
+            <button id="after">After</button>
+            <button id="before">Before</button>
+            <button id="remove">Remove</button>
+        </div>
+
+        <div class="box box-1 bordered">
+        </div>
+
+        <div class="box box-2">
+        </div>
+
+        <script>
+            //Actions
+            var appendAnElement = function(){
+                $('.box-1').append("<h3> Hello, World!</h3>");
+            }
+            var prependAnElement = function(){
+                $('.box-1').prepend('<h3>I\'m prepended! </h3>')
+            }
+            var appendToAnElement = function(){
+                $("<h3>This is append</h3>").appendTo('.box-2');
+            }
+            var prependToAnElement = function(){
+                $("<h3>This is prepend</h3>").prependTo('.box-2');
+            }
+            var afterAnElement = function(){
+                $('.box').after("<h3>I'm after things!</h3>")
+            }
+            var beforeAnElement = function(){
+                $('.box').before("<h3>I'm before things!</h3>")
+            }
+            var removeThemAll = function(){
+                $('h3').remove();
+            }
+
+
+            //Events that trigger actions
+            $('#prepend').click(function(){
+                prependAnElement();
+            });
+            $('#append').click(function(){
+                appendAnElement();
+            });
+            $('#appendTo').click(function(){
+                appendAnElement();
+            });
+            $('#prependTo').click(function(){
+                prependAnElement();
+            });
+            $('#after').click(function(){
+                afterAnElement();
+            });
+            $('#before').click(function(){
+                beforeAnElement();
+            });
+            $('#remove').click(function(){
+                removeThemAll();
+            });
+            
+        </script>
+  
+
+  
+  </body>
+</html>
