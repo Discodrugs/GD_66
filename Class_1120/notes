@@ -1,0 +1,97 @@
+flex box
+main idea is that flexbox accomodates all types of devices.
+makes the best use of its space. grid agnostic.
+think of horizontal and vertical phone position. 
+
+flex items are children within a flex container(box)
+
+parent=flexbox(main container)
+
+flex direction
+example 
+.container{
+    flex-direction: row| row-reverse| column| column-reverse;
+}
+
+flex wrap
+example
+.container{
+    flexwrap: nowrap | wrap |wrap-reverse;
+}
+
+
+no wrap shrinks child elements
+
+wrap stacks elements 
+
+wrap reverse stacks elements in backwards order
+
+justify content
+flexstart
+flexend
+center
+space between
+space around
+space evenly
+(great for nav bars)
+
+align-items (direction agnostic)
+flex-start
+flex-end
+center
+stretch (still respects min and max width)
+baseline
+space-between
+space-around
+
+align item= single item
+align content=multiple items
+
+
+
+
+
+
+
+
+
+
+
+
+
+properties for the children.
+
+(order property)
+depending on screen and orientation 
+the order of children can be manipulated
+(useful for visual heirarchy)
+example
+.item{
+    order:<integer>;
+}
+
+flex-grow (useful for visual heirarchy)
+example
+.item{
+    flex-grow: <number>;
+}
+
+flex-shrink
+example
+.item{
+    flex-shrink:<number>;
+}
+
+flex-basis{
+    flex-basis:<length>|auto;
+}
+if set to auto, extra space is dependent on content
+if flex-basis is set to a number it grows with no dependence to content
+
+flex is a combo of grow shrink and basis
+
+align-self refers to single item, can be set to be moved into a default spot depending on orientation of screen.
+.item{
+    align-self:auto|flex-start|flex-end;
+}
+
