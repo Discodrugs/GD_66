@@ -3,11 +3,14 @@
   <head>
     <meta charset="UTF-8">
     <title>title</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="main" href="main.css" type="text/css">
   <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
   </head>
   <body>
+        <h1>Add numbers then find the six. Expand window.</h1>
         <div class="button-container">
+<<<<<<< HEAD
                 <button id="append">Nine</button>
                 <button id="prepend">Prepend</button>
 
@@ -66,6 +69,54 @@
         var removeThemAll = function(){
             $('h3').remove();
         }
+=======
+                <button id="prepend">Add Nines</button>
+                <button id="after">Add a Six</button>
+                <button id="remove">Clear Page</button>
+        </div>
+
+        
+        <div class="column row">
+                 <div class="nine"> <img src="../Homework_1120/9.png"></div>
+                 <div class="nine"> <img src="../Homework_1120/9.png"></div>
+                 <div class="nine"> <img src="../Homework_1120/9.png"></div>  
+                 <div class="nine"> <img src="../Homework_1120/9.png"></div>
+                 <div class="six"> <img src="../Homework_1120/6.png"></div>
+                 <div class="nine"> <img src="../Homework_1120/9.png"></div>
+                 <div class="nine"> <img src="../Homework_1120/9.png"></div>
+                 <div class="nine"> <img src="../Homework_1120/9.png"></div>
+                 <div class="nine"> <img src="../Homework_1120/9.png"></div>               
+        </div> 
+               
+                              
+        
+<script>
+  var afterAnElement = function(){
+            $('.six').prepend('<img class="six" src="../Homework_1120/6.png">');
+        }
+
+        var prependAnElement = function () {
+            $('.nine').after('<img class="nine" src="../Homework_1120/9.png">');
+        }
+
+        var emptyAnElement = function () {
+            $('.row').remove();
+        }
+
+        // 
+        $('#after').click(function(){
+            afterAnElement();
+        });
+
+        $('#prepend').click(function () {
+            prependAnElement();
+        });
+
+        $('#remove').click(function () {
+            emptyAnElement();
+        });
+</script>
+>>>>>>> 313908c970844bd17b4afc3550eb663deaad8f78
 
         $('button').click(function(evnt){
 
