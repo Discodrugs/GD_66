@@ -1,0 +1,56 @@
+/*font-family: 'Prompt', sans-serif;
+font-family: 'Open Sans', sans-serif;*/
+.main-nav {
+    list-style: none;
+    margin: 0;
+    background: #AB4967;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    justify-content: flex-end;
+  }
+
+  .main-nav a {
+    font-family:'Prompt', sans-serif;
+    display: block;
+    padding: 1em;
+    color: white;
+  }
+
+  .main-nav a:hover {
+    background: #BC8DA0;
+  }
+
+  @media all and (max-width: 800px) {
+    .main-nav {
+      justify-content: space-around;
+    }
+  }
+  @media all and (max-width: 600px) {
+    .main-nav {
+      -webkit-flex-flow: column wrap;
+      flex-flow: column wrap;
+      padding: 0;
+    }
+  
+    .main-nav a {
+      text-align: center;
+      padding: 10px;
+      border-top: 1px solid rgba(255, 255, 255, 0.3);
+      border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    }
+  
+    .main-nav li:last-of-type a {
+      border-bottom: none;
+    }
+  }
+
+
+
+  /* Row 1 */
+  .half-card-1{
+      
+  }
