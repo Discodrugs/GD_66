@@ -51,6 +51,39 @@ font-family: 'Open Sans', sans-serif;*/
 
 
   /* Row 1 */
-  .half-card-1{
-      
+  .row-1 {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Open Sans', sans-serif;
+  }
+  .row-1 .col {
+    width: 50%;
+  }
+
+ }
+  
+  @media (max-width: 400px) {
+    .row-1 {
+      display: block;
+    }
+      .col {
+        width: 100%;
+        margin: 0;
+      }
+    }
+  }
+  
+  
+  
+  
+  * {
+    box-sizing: border-box;
+  }
+  .col {
+    background: salmon;
+    padding: 0px;
+    margin: 10px;
+  }
+  #nauman{
+      max-width: 100%;
   }
