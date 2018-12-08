@@ -1,32 +1,16 @@
-/*font-family: 'Quicksand', sans-serif;
-font-family: 'Montserrat', sans-serif;
-font-family: 'Lato', sans-serif;
-*/
-
-/* #1B1B1B smoky black*/
-/* #485665 independence*/
-/* #FBFFFE white*/
-/* #393E41 black olive*/
-/* #6F7D8C slate grey*/
-
 /*Global Styles*/
-body {
+html {
+  font-family: helvetica, serif;
+}
+html, body {
   padding: 0;
   margin: 0;
   width: 100%;
   background-color: #1B1B1B;
-  font-family: 'Montserrat', sans-serif;
-}
-
-#open{
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
-  padding-right: 40px;
 }
 
 .wrapper {
-  height: 40vh;
+  height: 100vh;
   width: 100%;
   background-position: center;
   background-size: cover;
@@ -35,18 +19,9 @@ body {
 }
 
 h1 {
-  text-align: center;
-  padding: 35px;
-  margin: 15px;
+  margin: 0;
+  padding: 7em 0 1em 0;
   color: white;
-  font-family: 'Montserrat', sans-serif;
-}
-.about{
-  color: white;
-  font-family: 'Lato', sans-serif;
-  height: 400px;
-  width:100%;
-  text-align: center;
 }
 
 .btn_one {
@@ -66,9 +41,8 @@ h1 {
 .open {
   color: white;
   font-size: 30px;
-  position: fixed;
   float: right;
-  padding-right: 2em;
+  padding-right: 1em;
   padding-top: 1em;
   cursor: pointer;
   display: block;
@@ -79,13 +53,13 @@ h1 {
 }
 
 
-/*Nav*/
+/*Tutorial Code*/
 .nav {
   height: 100vh;
   width: 0;
   position: fixed;
   z-index: 1;
-  background-color: rgba(57,62,65,0.9);
+  background-color: rgba(34,65,93,0.9);
   transition: 0.5s;
   display: block;
   overflow-x: hidden;  
@@ -109,24 +83,17 @@ h1 {
   float: right;
   font-size: 30px;
   margin: 1em 0 0 1em;
-  padding-right: 100px;
 }
 
 
 
-  /* Row 1 */
 
 
 
 
-/*Footer*/
-.footer {
-    position: sticky;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background-color: #AB4967;
-    color: white;
-    text-align: center;
- }
+
+
+
+
+
 
